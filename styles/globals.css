@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,10 +11,9 @@ body {
 }
 
 p {
-  margin: 15px 0;
-  line-height: 1.8;
+  margin: 10px 0;
+  line-height: 1.4;
 }
-
 a {
   text-decoration: none;
   color: #333;
@@ -23,14 +21,14 @@ a {
 
 img {
   width: 100%;
-  border-radius: 10px;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  border: 3px solid #213147;
 }
 
 header {
-  background: steelblue;
-  color: #fff;
   padding: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 header a {
@@ -38,16 +36,36 @@ header a {
 }
 
 .container {
-  max-width: 768px;
+  width: 100%;
   margin: auto;
   padding: 5px 10px;
 }
 
+.header-container{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #213147;
+  margin-bottom: 0;
+  z-index: 99;
+}
+.footer-container{
+  background-color: #213147;
+  padding: 23px;
+  margin-bottom: 0;
+}
+
 .head-text{
-  color: steelblue;
+  color: #213147;
   background-color: white;
-  border-radius: 8px;
   padding: 4px 8px;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+}
+
+.head-text:hover{
+  transform: scale(1.02);
 }
 
 .flex-cont{
@@ -56,17 +74,11 @@ header a {
   justify-content: center;  
 }
 
-.btn {
-  display: inline-block;
-  background: steelblue;
-  color: #fff;
-  border: none;
+.bg-master{
+  background: #213147;
   padding: 8px 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: inherit;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .btn:focus {
@@ -74,30 +86,70 @@ header a {
 }
 
 .btn:hover {
-  transform: scale(0.98);
+  transform: scale(1.02);
 }
 
 .btn-back {
-  background: #f4f4f4;
-  color: #000;
-  margin-bottom: 20px;
+  padding: 8px 16px;
+  color: white;
+  margin-bottom: 15px;
+
 }
 
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-top: 30px;
+  max-width: 768px;
+  margin: 70px 0 30px 0;
+}
+
+.main-cont-bg{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
   padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 3px solid #213147;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  color: #213147;
+  cursor: pointer;
+}
+.card-2-container{
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #213147;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  margin-bottom: 20px;
+}
+.card-2{
+  max-width: 686px;
+  padding: 15px 20px;
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  color: #213147;
 }
 
-.card-page {
-  padding: 15px 30px;
+.card:hover{
+  transform: scale(1.02);
+
+}
+.card-title{
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 800;
+}
+.card-desc{
+  font-weight: 500;
+  font-size: 15px;
+  padding: 0 4px;
 }
 
 .post-title {
@@ -105,9 +157,10 @@ header a {
 }
 
 .post-date {
-  background: #f4f4f4;
-  margin-bottom: 20px;
-  padding: 3px 10px;
+  margin-bottom: 10px;
+  padding: 3px 8px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .post-body ul,
@@ -115,7 +168,7 @@ ol {
   font-size: 110%;
   line-height: 2.3;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 20px;
 }
 
 .post-body pre {

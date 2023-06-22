@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header>
+    <header className='header-container'>
       <div className='container flex-cont'>
         <Link href='/' passHref>
           <h2 className='head-text'>Breaking The Habit</h2>

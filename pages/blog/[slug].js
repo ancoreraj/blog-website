@@ -10,11 +10,8 @@ export default function PostPage({
   content,
 }) {
   return (
-    <>
-      <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
-      </Link>
-      <div className='card card-page'>
+    <div className='card-2-container'>
+      <div className='card-2 card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
         <img src={cover_image} alt='' />
@@ -22,7 +19,7 @@ export default function PostPage({
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
