@@ -1,7 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import { marked } from 'marked'
+import { remark } from 'remark';
+import html from 'remark-html';
 
 export default function PostPage({
   frontmatter: { title, date, cover_image },
@@ -10,12 +11,12 @@ export default function PostPage({
 }) {
   return (
     <div className='card-2-container'>
-      <div className='card-2 card-page'>
+      <div className='card-2'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
         <img src={cover_image} alt='' />
         <div className='post-body'>
-          <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
       </div>
     </div>
@@ -45,11 +46,16 @@ export async function getStaticProps({ params: { slug } }) {
 
   const { data: frontmatter, content } = matter(markdownWithMeta)
 
+  const processedContent = await remark()
+  .use(html)
+  .process(content);
+  const contentHtml = processedContent.toString();
+
   return {
     props: {
       frontmatter,
       slug,
-      content,
+      content : contentHtml,
     },
   }
 }
