@@ -1,3 +1,11 @@
+---
+title: 'How I Turned My Old Laptop into a Local S3 Server Using Go and Ubuntu'
+date: 'Nov 8, 2025'
+excerpt: 'How I Turned My Old Laptop into a Local S3 Server Using Go and Ubuntu & Breathing Life into the Old Laptop'
+cover_image: '/images/posts/img_s3.png'
+---
+
+
 # How I Turned My Old Laptop into a Local S3 Server Using Go and Ubuntu
 
 A few weeks ago, I was cleaning my desk and noticed my old Windows laptop sitting there, untouched for months.  
@@ -6,6 +14,7 @@ It wasn’t broken, just slow, outdated, and forgotten. But I couldn’t bring m
 I decided to convert it into a **home server** — a small, self-hosted cloud to store and sync files across all my devices.
 
 ---
+
 
 ## Building My Own S3 Clone
 
@@ -23,7 +32,9 @@ Here’s what it could do:
 The repository lived on GitHub. I wanted others (and my future self) to be able to clone it easily.  
 After pushing it, I decided to take things further, to actually host it on my old laptop.
 
+
 ---
+
 
 ## Breathing Life into the Old Laptop
 
@@ -33,6 +44,7 @@ So I decided to switch it to **Ubuntu**.
 You can skip this step, also you can get so many better blogs to install ubuntu in your old laptop.
 
 ---
+
 
 ## Setting Up the Server
 
@@ -144,7 +156,8 @@ ssh username@ip_address
 ```
 
 It prompted me for the password, and just like that, I was inside my Ubuntu machine remotely.
+Now I could start, stop, or update the Go server without ever touching the laptop physically and sync all of data with my laptop.
 
-Now I could start, stop, or update the Go server without ever touching the laptop physically.
+Hope you like this blog post. Lets connect at <u>[Twitter](https://twitter.com/Ancore_Raj)</u> or <u>[LinkedIn](https://www.linkedin.com/in/ankur-raj-)</u>.
 
 ---
