@@ -178,10 +178,20 @@ ol {
   padding: 20px;
   margin: 20px 0;
   line-height: 2.3;
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 500px) {
   .posts {
     grid-template-columns: 1fr;
+  }
+  .post-body pre{
+    max-width: 350px;
   }
 }
