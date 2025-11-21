@@ -76,7 +76,7 @@ All my devices (my MacBook, phone, and tablet) were on the same Wi-Fi network, s
 Use below command to find your IP address
 
 ```bash
-ip a
+ipconfig getifaddr en0
 ```
 
 Something like this will be your ip address
