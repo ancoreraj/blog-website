@@ -82,7 +82,7 @@ ip a
 Something like this will be your ip address
 
 ```
-inet 192.168.1.23/24
+inet 192.168.1.**/**
 ```
 
 That was my laptop’s IP address.
@@ -90,7 +90,7 @@ That was my laptop’s IP address.
 I opened the browser on my MacBook and entered:
 
 ```
-http://192.168.1.23:3000
+http://192.168.1.**:3000
 ```
 
 It loaded instantly.  
