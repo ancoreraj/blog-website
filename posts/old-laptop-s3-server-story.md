@@ -140,7 +140,7 @@ So I installed and enabled the SSH server on Ubuntu:
 sudo apt update
 sudo apt install openssh-server
 sudo systemctl start ssh
-sudo systemctl enable ssh
+sudo systemctl status ssh
 ```
 
 I checked its status to be sure:
