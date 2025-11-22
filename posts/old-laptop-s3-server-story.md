@@ -1,5 +1,5 @@
 ---
-title: 'How I Turned My Old Laptop into a Local S3 Server Using Go and Ubuntu'
+title: 'PART 1: How I Turned My Old Laptop into a Local S3 Server Using Go and Ubuntu'
 date: 'Nov 8, 2025'
 excerpt: 'How I Turned My Old Laptop into a Local S3 Server Using Go and Ubuntu & Breathing Life into the Old Laptop'
 cover_image: '/images/posts/img_s3.png'
